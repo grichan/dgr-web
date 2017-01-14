@@ -13,11 +13,12 @@
 
 <body>
 <div id="container">
-		<?php include 'navigation.html';?>
 		<?php include 'header.html';?>
-		
+		<?php include 'navigation.html';?>
+
+
 		<section>
-		
+
 			<article>
 				<header>
 					<h2>Article title</h2>
@@ -25,7 +26,7 @@
 				</header>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 			</article>
-			
+
 			<article>
 				<header>
 					<h2>Article title</h2>
@@ -33,7 +34,7 @@
 				</header>
 				<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
 			</article>
-			
+
 		</section>
 
 		<aside>
