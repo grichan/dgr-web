@@ -1,23 +1,79 @@
 body {
-	background-color: #8ddfff;
 	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/underwater.jpg");
+	background-repeat: repeat;
+
 }
-/* Wrapper */
-	#container {
+
+
+
+	.header {
 		width: 100%;
-		max-width: calc(100% - 2px);
-		margin: 0 auto;
-		background-color:white;
+		height: 80px;
+		background-color: #fff;
+	}
+	.header-top{
+		height:inherit;
+		margin:0;
+		display:block;
+	}
+	.header-top>div {
+		line-height: 60px;
+		margin: 10px;
+
+
+	}
+	.header-logo {
+		width: 250px;
+		height: 60px;
+		float: left;
+		background-color: #123;
+
+
+	}
+	.header-contacts {
+		float: left;
+		width: auto;
+
+	}
+	.header-contact {
+		width: auto;
+		height: 60px;
+		float: left;
+		margin-left: 50px;
+		text-align: center;
+		background-color: #a77ba4;
+	}
+	.header-social {
+		width: auto;
+		height: 40px;
+		float: right;
+		background-color: #777aa4;
+	}
+	.header-language {
+		width: auto;
+		height: 60px;
+		float: right;
+	}
+	.header-language img {
+		width: auto;
+		height: 40px;
+		margin-top: 1.5em;
 	}
 
+/* NAVIGATION PARRT */
 nav {
-	height: 100px;
+	height: 40px;
+	width: 100%;
+	margin: 0;
+	background: ##002E4F;
 }
 	#navigation {
-		width: 100%;
+		right: 0;
 		height: auto;
-		background: #2f3036;
-
 	}
 	/*Strip the ul of padding and list styling*/
 	ul {
@@ -30,25 +86,27 @@ nav {
 	/*Create a horizontal list with spacing*/
 	li {
 		display:inline-block;
-		float: right;
+		float: left;
 		margin-right: 1px;
 	}
 	/*Style for menu links*/
 	li a {
 		display:block;
-		min-width:140px;
-		height: 50px;
+		min-width:120px;
+		height: 40px;
 		text-align: center;
-		line-height: 50px;
+		line-height: 40px;
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 14px;
 		color: #fff;
-		background: #2f3036;
+		background: #002E4F;
 		text-decoration: none;
+		text-transform: uppercase;
 	}
 
 	/*Hover state for top level links*/
 	li:hover a {
-		background: #19c589;
+		background: #7bc6fc;
 	}
 
 	/*Style for dropdown links*/
@@ -73,6 +131,7 @@ li ul {
 li ul li {
 	display: block;
 	float: none;
+
 }
 
 /*Prevent text wrapping*/
@@ -95,6 +154,7 @@ ul li a:hover + .hidden, .hidden:hover {
 	text-align: center;
 	padding: 10px 0;
 	display: none;
+
 }
 
 /*Hide checkbox*/
@@ -106,8 +166,85 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #navigation{
     display: block;
 }
+/* END OF NAV */
 
-@media screen and (max-width: 600px) {
+h1 {
+	text-align: center;
+	color: #fff;
+	line-height: 400px;
+	font-size: 20px;
+	font-size: 7vw;
+	font-family: 'Lemon', cursive;
+	opacity: .9;
+
+}
+.top-page img{
+	width: 100%;
+}
+
+.scrolling-text {
+	width: calc(100% - 20px);
+	height: 40px;
+	margin: 10px;
+	background-color: white;
+	opacity: .7;
+}
+
+.main-part  {
+	margin:0 30px  ;
+	width: auto;
+	height: auto;
+}
+.main-left {
+	float: left;
+	width:calc(50% - 20px);
+	height: 600px;
+	margin: 10px;
+	background-color: teal;
+}
+.main-right {
+	float: right;
+	width:calc(50% - 20px);
+	height: 600px;
+	margin: 10px;
+	background-color: red;
+}
+.main-right-bottom , .main-right-top {
+	width:calc(100% - 20px);
+	margin: 10px;
+	height: calc(50% - 20px);
+	background-color: gray;
+}
+
+.social-media  {
+	margin:0 30px  ;
+	width: auto;
+	height: auto;
+}
+
+.social-left , .social-right{
+	width:calc(50% - 60px);
+	height: 600px;
+	margin: 30px;
+	background-color: lightgray;
+	display: block;
+}
+.social-left {
+	float: left;
+}
+.social-right{
+	float: right;
+}
+/*MEDIA STAY AT THE BOTTOM!*/
+@media screen and (max-width: 700px) {
+	nav {
+		height: auto;
+	}
+		nav {
+			height: auto;
+		}
+
+
 	/*Make dropdown links appear inline*/
 		ul {
 			position: static;
@@ -124,56 +261,28 @@ input[type=checkbox]:checked ~ #navigation{
 		/*Display 'show menu' link*/
 		.show-menu {
 			display:block;
+			width: 100%;
 		}
+		.header {
+			height: 450px;
+		}
+		.header-top>div {
+			    width: 100%;
+					height: 90px;
+					margin: 0;
+
+		}
+		.main-left , .main-right {
+			width: 100%;
+		}
+}	/*ENDDD OF MEDIA 1*/
+@media screen and (min-width: 300px) {
 }
 
-
-
-section {
-	padding:2%;
-}
-
-
-
-.header {
-	height: 90px;
-	width: 100%;.
-	background-color: #aaa;
-}
-.header-top{
+.top-page {
+	width: 100%;
 	height: auto;
-	width:100%;
-	margin:0 50%;
-	display: block;
-}
-.header-logo {
-	width: 90px;
-	height: 90px;
-	float: left;
-	background-color: #fffaa4;
-
-}
-.header-contacts {
-	float: left;
-	width: 200px;
-	height: 10px;
-}
-.header-contact {
-	width: auto;
-	height: 40px;
-	float: left;
-	background-color: #a77ba4;
-}
-.header-social {
-	width: auto;
-	height: 40px;
-	float: left;
-	background-color: #777aa4;
-}
-.header-language {
-	width: auto;
-	height: 40px;
-	float: left;
-	background-color: #177aa4;
-
+	background-image: url("../images/2-divers.jpg");
+	background-size: cover;
+	background-position: 50% 45%;
 }
