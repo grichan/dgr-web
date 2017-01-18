@@ -27,7 +27,10 @@
 
 <section class="main-part">
 	<div class="main-left">
-About us
+	<a href="#"><img src="../assets/images/dgr-diving-cyptus.jpg" alt="12"></a>
+
+		</div>
+
 	</div>
 	<div class="main-right">
 			<div class="main-right-top">
@@ -44,11 +47,16 @@ Dive Sites
 	<div class="social-right">
 	</div>
 </section>
+<section class="quick-gallery">
+	<img class="first" src="image-1.jpg" alt="" />
+    	<img src="image-2.jpg" alt="" />
+    	<img src="image-3.jpg" alt="" />
+</section>
 
 
 
 <footer>
-	<p>Copyright 2009 Your name</p>
+	<p>Copyright 2017 Vlad Grichan.</p>
 </footer>
 	</body>
 
