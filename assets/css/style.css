@@ -30,8 +30,9 @@ body {
 		width: 250px;
 		height: 60px;
 		float: left;
-		background-color: #123;
-
+		background-image: url("../images/padi.gif");
+		background-size: cover;
+		background-position: center;
 
 	}
 	.header-contacts {
@@ -77,6 +78,11 @@ nav {
 	width: 100%;
 	margin: 0;
 	background: #002E4F;
+	z-index: 100;
+}
+.fixed{
+	position: fixed;
+	top: 0;
 }
 	#navigation {
 		right: 0;
@@ -178,26 +184,26 @@ input[type=checkbox]:checked ~ #navigation{
 h1 {
 	text-align: center;
 	color: #fff;
-	line-height: 400px;
+	line-height: 510px;
 	font-size: 20px;
 	font-size: 7vw;
 	font-family: 'Lemon', cursive;
 	opacity: .9;
-	text-shadow: 0 0 3px #111;
+	text-shadow: -1px -3px 20px #111;
+		margin: 0;
 
 }
 .top-page {
 	width: 100%;
-	height: auto;
+	height: 510px;
 	background-image: url("../images/2-divers.jpg");
 	background-size: cover;
 	background-position: 50% 45%;
 	background-attachment: fixed;
-}
-.top-page img{
-	width: 100%;
+
 
 }
+
 
 .scrolling-text {
 	width: calc(100% - 20px);
@@ -217,17 +223,48 @@ h1 {
 	width:calc(50% - 20px);
 	height: 500px;
 	margin: 10px;
-	background: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
 }
-.main-left img{
-	width: calc(100% - 30px);
+ .image1{
+	background-image: url("../images/dgr-diving-cyprus.jpg");
+	background-position: center;
+	background-size: cover;
+	width: calc(100% - 20px);
 	margin: 10px;
 	height: 470px;
+	display: block;
+	z-index: 4;
+
+}
+.button {
+	width: 200px;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.8);
 	border-style: solid;
-	border-width: 5px;
-	border-color:rgba(0, 0, 0, 0.7);
-	-webkit-filter:saturate(160%);
-	transform: scale(-1,-1);
+	border-radius: 10px;
+	border-color: rgba(0, 0, 0, 0.8);
+	display: block;
+	position:absolute;
+	z-index: 5;
+	margin: -100px calc(50% - 100px);
+
+	text-decoration: none;
+	line-height: 50px;
+	text-align: center;
+	font-family: 'Lemon', cursive;
+	color: #fff;
+	font-size: 19px;
+
+	-o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+.button:hover  {
+	background-color: #003D62	;
 
 }
 .main-right {
@@ -235,13 +272,34 @@ h1 {
 	width:calc(50% - 20px);
 	height: 600px;
 	margin: 10px;
-	background-color: red;
+	background-color: rgba(0, 0, 0, 0.2);
 }
 .main-right-bottom , .main-right-top {
 	width:calc(100% - 20px);
 	margin: 10px;
 	height: calc(50% - 20px);
-	background-color: gray;
+
+}
+.main-right-bottom {
+	background-image: url("../images/surfice.jpg");
+	background-position: center;
+	background-size: cover;
+		text-align: center;
+		line-height:260px;
+		font-family: 'Lemon', cursive;
+		font-size:35px;
+		color: #fff;
+}
+.main-right-top {
+	background-image: url("../images/cave.jpg");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	line-height: 260px;
+	font-family: 'Lemon', cursive;
+	font-size: 35px;
+	color: #fff;
+
 }
 
 .social-media  {
@@ -254,7 +312,7 @@ h1 {
 	width:calc(50% - 60px);
 	height: 600px;
 	margin: 30px;
-	background-color: lightgray;
+	background-color:rgba(0, 0, 0, 0);
 	display: block;
 }
 .social-left {
